@@ -1,132 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230406 23:32:13.923" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230406 23:52:31.543" rpa="false" schemaversion="3">
 <suite id="s1" name="Avaliacao Teste" source="D:\Users\User\Downloads\AvaliacaoRobot\avaliacao_teste.robot">
 <test id="s1-t1" name="Caso de Teste 01 - Enviar formulario" line="9">
 <kw name="Abrir o navegador" library="resources" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230406 23:32:14.196" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20230406 23:32:14.196" endtime="20230406 23:32:15.770"/>
+<msg timestamp="20230406 23:52:31.879" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230406 23:52:31.879" endtime="20230406 23:52:33.613"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230406 23:32:15.771" endtime="20230406 23:32:15.882"/>
+<status status="PASS" starttime="20230406 23:52:33.613" endtime="20230406 23:52:33.767"/>
 </kw>
-<status status="PASS" starttime="20230406 23:32:14.195" endtime="20230406 23:32:15.882"/>
+<status status="PASS" starttime="20230406 23:52:31.878" endtime="20230406 23:52:33.767"/>
 </kw>
 <kw name=" Acessar a home page do site PHPTRAVELS" library="resources">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230406 23:32:15.883" level="INFO">Opening url 'https://phptravels.com/demo'</msg>
-<status status="PASS" starttime="20230406 23:32:15.883" endtime="20230406 23:32:17.225"/>
+<msg timestamp="20230406 23:52:33.770" level="INFO">Opening url 'https://phptravels.com/demo'</msg>
+<status status="PASS" starttime="20230406 23:52:33.769" endtime="20230406 23:52:35.138"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>locator=${SUBMIT}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230406 23:32:17.225" endtime="20230406 23:32:17.535"/>
+<status status="PASS" starttime="20230406 23:52:35.139" endtime="20230406 23:52:35.398"/>
 </kw>
-<status status="PASS" starttime="20230406 23:32:15.883" endtime="20230406 23:32:17.535"/>
+<status status="PASS" starttime="20230406 23:52:33.769" endtime="20230406 23:52:35.399"/>
 </kw>
 <kw name="Preencher o formulario Instant Demo" library="resources">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=first_name</arg>
 <arg>text=${USUARIO.nome}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230406 23:32:17.538" level="INFO">Typing text 'Felipe' into text field 'first_name'.</msg>
-<status status="PASS" starttime="20230406 23:32:17.536" endtime="20230406 23:32:17.664"/>
+<msg timestamp="20230406 23:52:35.401" level="INFO">Typing text 'Felipe' into text field 'first_name'.</msg>
+<status status="PASS" starttime="20230406 23:52:35.400" endtime="20230406 23:52:35.567"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=last_name</arg>
 <arg>text=${USUARIO.sobrenome}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230406 23:32:17.665" level="INFO">Typing text 'Manoel' into text field 'last_name'.</msg>
-<status status="PASS" starttime="20230406 23:32:17.664" endtime="20230406 23:32:17.766"/>
+<msg timestamp="20230406 23:52:35.568" level="INFO">Typing text 'Manoel' into text field 'last_name'.</msg>
+<status status="PASS" starttime="20230406 23:52:35.567" endtime="20230406 23:52:35.692"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=business_name</arg>
 <arg>text=${USUARIO.busines}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230406 23:32:17.767" level="INFO">Typing text 'Shakalzyn' into text field 'business_name'.</msg>
-<status status="PASS" starttime="20230406 23:32:17.766" endtime="20230406 23:32:17.851"/>
+<msg timestamp="20230406 23:52:35.693" level="INFO">Typing text 'Shakalzyn' into text field 'business_name'.</msg>
+<status status="PASS" starttime="20230406 23:52:35.692" endtime="20230406 23:52:35.875"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=email</arg>
 <arg>text=${USUARIO.email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230406 23:32:17.852" level="INFO">Typing text 'shakalzyn@mail.com' into text field 'email'.</msg>
-<status status="PASS" starttime="20230406 23:32:17.851" endtime="20230406 23:32:17.960"/>
+<msg timestamp="20230406 23:52:35.876" level="INFO">Typing text 'shakalzyn@mail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20230406 23:52:35.875" endtime="20230406 23:52:36.034"/>
 </kw>
-<status status="PASS" starttime="20230406 23:32:17.536" endtime="20230406 23:32:17.960"/>
+<status status="PASS" starttime="20230406 23:52:35.399" endtime="20230406 23:52:36.034"/>
 </kw>
 <kw name="Resolver conta do SUBMIT e enviar formulario" library="resources">
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${NUMERO1}</var>
 <arg>locator=numb1</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230406 23:32:17.995" level="INFO">${NUMERO1} = 5</msg>
-<status status="PASS" starttime="20230406 23:32:17.963" endtime="20230406 23:32:17.995"/>
+<msg timestamp="20230406 23:52:36.064" level="INFO">${NUMERO1} = 6</msg>
+<status status="PASS" starttime="20230406 23:52:36.036" endtime="20230406 23:52:36.064"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${NUMERO2}</var>
 <arg>locator=numb2</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230406 23:32:18.019" level="INFO">${NUMERO2} = 1</msg>
-<status status="PASS" starttime="20230406 23:32:17.995" endtime="20230406 23:32:18.019"/>
+<msg timestamp="20230406 23:52:36.127" level="INFO">${NUMERO2} = 9</msg>
+<status status="PASS" starttime="20230406 23:52:36.065" endtime="20230406 23:52:36.127"/>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <var>${RESULTADO_CONTA}</var>
 <arg>${NUMERO1}+${NUMERO2}</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20230406 23:32:18.019" level="INFO">${RESULTADO_CONTA} = 6</msg>
-<status status="PASS" starttime="20230406 23:32:18.019" endtime="20230406 23:32:18.019"/>
+<msg timestamp="20230406 23:52:36.128" level="INFO">${RESULTADO_CONTA} = 15</msg>
+<status status="PASS" starttime="20230406 23:52:36.127" endtime="20230406 23:52:36.128"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=number</arg>
 <arg>text=${RESULTADO_CONTA}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230406 23:32:18.020" level="INFO">Typing text '6' into text field 'number'.</msg>
-<status status="PASS" starttime="20230406 23:32:18.019" endtime="20230406 23:32:18.095"/>
+<msg timestamp="20230406 23:52:36.129" level="INFO">Typing text '15' into text field 'number'.</msg>
+<status status="PASS" starttime="20230406 23:52:36.128" endtime="20230406 23:52:36.235"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${RESULTADO_CONTA}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230406 23:32:18.095" level="INFO">6</msg>
-<status status="PASS" starttime="20230406 23:32:18.095" endtime="20230406 23:32:18.095"/>
+<msg timestamp="20230406 23:52:36.235" level="INFO">15</msg>
+<status status="PASS" starttime="20230406 23:52:36.235" endtime="20230406 23:52:36.235"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>locator=${SUBMIT}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230406 23:32:18.096" level="INFO">Clicking element 'demo'.</msg>
-<status status="PASS" starttime="20230406 23:32:18.095" endtime="20230406 23:32:18.146"/>
+<msg timestamp="20230406 23:52:36.236" level="INFO">Clicking element 'demo'.</msg>
+<status status="PASS" starttime="20230406 23:52:36.236" endtime="20230406 23:52:36.307"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230406 23:32:23.148" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20230406 23:32:18.146" endtime="20230406 23:32:23.148"/>
+<msg timestamp="20230406 23:52:41.309" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230406 23:52:36.307" endtime="20230406 23:52:41.309"/>
 </kw>
-<status status="PASS" starttime="20230406 23:32:17.962" endtime="20230406 23:32:23.148"/>
+<status status="PASS" starttime="20230406 23:52:36.036" endtime="20230406 23:52:41.309"/>
 </kw>
 <kw name="Fechar o navegador" library="resources" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230406 23:32:23.324" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230406 23:32:23.149" endtime="20230406 23:32:23.325"/>
+<msg timestamp="20230406 23:52:41.535" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230406 23:52:41.310" endtime="20230406 23:52:41.535"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230406 23:32:23.325" endtime="20230406 23:32:25.608"/>
+<status status="PASS" starttime="20230406 23:52:41.535" endtime="20230406 23:52:43.819"/>
 </kw>
-<status status="PASS" starttime="20230406 23:32:23.148" endtime="20230406 23:32:25.608"/>
+<status status="PASS" starttime="20230406 23:52:41.310" endtime="20230406 23:52:43.820"/>
 </kw>
 <doc>Esse envia o formulario do site php travels</doc>
 <tag>forms</tag>
-<status status="PASS" starttime="20230406 23:32:14.194" endtime="20230406 23:32:25.608"/>
+<status status="PASS" starttime="20230406 23:52:31.877" endtime="20230406 23:52:43.821"/>
 </test>
 <doc>Teste robot para avaliação</doc>
-<status status="PASS" starttime="20230406 23:32:13.925" endtime="20230406 23:32:25.610"/>
+<status status="PASS" starttime="20230406 23:52:31.545" endtime="20230406 23:52:43.824"/>
 </suite>
 <statistics>
 <total>
